@@ -132,3 +132,19 @@ docs/en/_build
 
 # default value for marcos.py
 internutopia/default_config.py
+
+# logs
+*.log
+logs/
+bridge_logs/
+
+# data
+*.csv
+*.jsonl
+
+# videos
+*.mp4
+
+# temp
+__pycache__/
+*.pyc

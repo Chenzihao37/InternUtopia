@@ -1,85 +1,79 @@
-import numpy as np
+from pathlib import Path
 
-from internutopia.core.config import Config, SimConfig
-from internutopia.core.gym_env import Env
-from internutopia.core.util import has_display
-from internutopia.macros import gm
-from internutopia_extension import import_extensions
-from internutopia_extension.configs.metrics import RecordingMetricCfg
-from internutopia_extension.configs.robots.franka import (
-    FrankaRobotCfg,
-    arm_ik_cfg,
-    gripper_cfg,
-)
-from internutopia_extension.configs.tasks import ManipulationTaskCfg
-
-headless = not has_display()
-
-franka = FrankaRobotCfg(
-    position=(0, 0, 0),
-    controllers=[
-        arm_ik_cfg,
-        gripper_cfg,
-    ],
+from internutopia.bridge import (
+    FrankaManipulationAPI,
+    create_franka_robot_cfg,
 )
 
-config = Config(
-    simulator=SimConfig(physics_dt=1 / 240, rendering_dt=1 / 240, use_fabric=False, headless=headless, webrtc=True),
-    task_configs=[
-        ManipulationTaskCfg(
-            metrics=[
-                RecordingMetricCfg(
-                    robot_name='franka',
-                    fields=['joint_action'],
-                )
-            ],
-            scene_asset_path=gm.ASSET_PATH + '/scenes/empty.usd',
-            robots=[franka],
-            prompt='Prompt test 1',
-            target='franka_manipulation',
-            episode_idx=0,
-            max_steps=2000,
-        ),
-    ],
-)
 
-import_extensions()
+ASSET_ROOT = Path(__file__).resolve().parents[1] / "assets"
+SCENE_ASSET_PATH = str(ASSET_ROOT / "scenes" / "empty.usd")
+OUTPUT_DIR = Path(__file__).resolve().parent / "logs"
+WAREHOUSE_PATH = "/home/zyserver/isaacsim_assets/Assets/Isaac/5.1/Isaac/Environments/Simple_Warehouse/warehouse.usd"
 
-env = Env(config)
-from omni.isaac.core.utils.rotations import euler_angles_to_quat
 
-obs, _ = env.reset()
-print(f'========INIT OBS{obs}=============')
+def main():
+    if not Path(SCENE_ASSET_PATH).exists():
+        raise FileNotFoundError(f"Scene file not found: {SCENE_ASSET_PATH}")
 
-actions = [
-    {arm_ik_cfg.name: [np.array([0.4, 0, 0.45]), euler_angles_to_quat((0.0, 0.0, 0.0))]},
-    {gripper_cfg.name: ['open']},
-    {arm_ik_cfg.name: [np.array([0.4, 0.4, 0.1]), euler_angles_to_quat((np.pi / 2, np.pi / 2, np.pi / 2))]},
-    {gripper_cfg.name: ['close']},
-]
+    robot_cfg = create_franka_robot_cfg(position=(0.0, 0.0, 0.0))
+    api = FrankaManipulationAPI(
+        # scene_asset_path=SCENE_ASSET_PATH,
+        scene_asset_path=WAREHOUSE_PATH,
+        robot_cfg=robot_cfg,
+        pause_steps=60,
+        arm_waypoint_count=6,
+    )
 
-i = 0
-while env.simulation_app.is_running():
-    i += 1
-    if i % 400 == 0:
-        env_actions = actions[0]
-    elif i % 400 == 100:
-        env_actions = actions[1]
-    elif i % 400 == 200:
-        env_actions = actions[2]
-    elif i % 400 == 300:
-        env_actions = actions[3]
-    else:
-        env_actions = {}
+    obs = api.start()
+    print(f"======== INIT OBS {obs} =========")
 
-    obs, _, terminated, _, _ = env.step(action=env_actions)
+    # 末端朝下的抓取姿态，数值沿用你原 demo 的用法。
+    quat_down = (0.0, 0.0, 1.0, 0.0)
 
-    if terminated:
-        obs, info = env.reset()
-        if info is None:  # No more episode
-            break
+    pick_target = {
+        "name": "pick_site",
+        "position": (0.40, 0.00, 0.10),
+        "pre_position": (0.40, 0.00, 0.30),
+        "post_position": (0.40, 0.00, 0.30),
+        "orientation": quat_down,
+    }
+    place_target = {
+        "name": "place_site",
+        "position": (0.40, -0.30, 0.10),
+        "pre_position": (0.40, -0.30, 0.30),
+        "post_position": (0.40, -0.30, 0.30),
+        "orientation": quat_down,
+    }
 
-    if i % 1000 == 0:
-        print(i)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-env.close()
+    try:
+        pick_result = api.pick(
+            pick_target,
+            dump_path=OUTPUT_DIR / "franka_pick.json",
+        )
+        print(
+            "pick => "
+            f"success={pick_result.success}, "
+            f"steps={pick_result.steps}, "
+            f"log={OUTPUT_DIR / 'franka_pick.json'}"
+        )
+
+        if pick_result.success:
+            place_result = api.release(
+                place_target,
+                dump_path=OUTPUT_DIR / "franka_release.json",
+            )
+            print(
+                "release => "
+                f"success={place_result.success}, "
+                f"steps={place_result.steps}, "
+                f"log={OUTPUT_DIR / 'franka_release.json'}"
+            )
+    finally:
+        api.close()
+
+
+if __name__ == "__main__":
+    main()

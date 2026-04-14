@@ -1,0 +1,1831 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+)
+
+def Xform "World"
+{
+    def Xform "MeromScene"
+    {
+        def Xform "armchair_bslhmj_0"
+        {
+            quatf xformOp:orient = (-0.26064995, -7.450581e-9, 1.9092113e-8, 0.9654335)
+            float3 xformOp:scale = (1.0214094, 1.0221801, 0.94725513)
+            double3 xformOp:translate = (4.188450813293457, 6.250100135803223, 0.31537115573883057)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/armchair/bslhmj/usd/bslhmj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "armchair_qplklw_0"
+        {
+            quatf xformOp:orient = (-0.69883853, -3.4924597e-9, 8.876668e-9, 0.7152796)
+            float3 xformOp:scale = (1.0948607, 1.091175, 1.0188986)
+            double3 xformOp:translate = (-0.2052067071199417, 7.69870138168335, 0.4564605951309204)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/armchair/qplklw/usd/qplklw.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "armchair_qplklw_1"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0948607, 1.091175, 1.0188986)
+            double3 xformOp:translate = (-1.0965465307235718, 8.221463203430176, 0.4564605951309204)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/armchair/qplklw/usd/qplklw.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "armchair_qplklw_2"
+        {
+            quatf xformOp:orient = (-0.012497058, 0, 1.0912231e-9, 0.99992204)
+            float3 xformOp:scale = (1.0948607, 1.091175, 1.0188986)
+            double3 xformOp:translate = (-1.0654692649841309, 7.138555526733398, 0.4564605951309204)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/armchair/qplklw/usd/qplklw.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "armchair_qplklw_3"
+        {
+            quatf xformOp:orient = (0.7232237, 1.8626451e-9, -4.9185473e-9, 0.6906139)
+            float3 xformOp:scale = (1.0948607, 1.091175, 1.0188986)
+            double3 xformOp:translate = (-1.9280519485473633, 7.65247917175293, 0.4564605951309204)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/armchair/qplklw/usd/qplklw.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "armchair_tcxiue_0"
+        {
+            quatf xformOp:orient = (-0.20450997, -0.00008982795, 0.0004362145, 0.9788643)
+            float3 xformOp:scale = (1.1162992, 1.1070148, 1.1976186)
+            double3 xformOp:translate = (0.5969250798225403, -1.0764169692993164, 0.5877618789672852)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/armchair/tcxiue/usd/tcxiue.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "hamper_clziqw_0"
+        {
+            quatf xformOp:orient = (0.709076, -0.000029296614, 0.0000020740554, 0.7051321)
+            float3 xformOp:scale = (2.9611516, 2.7666237, 4.1484814)
+            double3 xformOp:translate = (1.521274447441101, -1.575561285018921, 0.27214011549949646)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/hamper/clziqw/usd/clziqw.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "hamper_wdsnjy_0"
+        {
+            quatf xformOp:orient = (0.7067417, -0.000093874696, -0.00009121013, 0.7074719)
+            float3 xformOp:scale = (3.8663704, 4.59898, 4.1402326)
+            double3 xformOp:translate = (1.5091334581375122, -1.0515010356903076, 0.2413567453622818)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/hamper/wdsnjy/usd/wdsnjy.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bed_zrumze_0"
+        {
+            quatf xformOp:orient = (0.000006392227, 0.000050476752, -0.000016739594, 1)
+            float3 xformOp:scale = (0.77867645, 1.0190945, 1.2924198)
+            double3 xformOp:translate = (-2.0332133769989014, -0.8340015411376953, 0.3706377446651459)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bed/zrumze/usd/zrumze.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bed_zrumze_1"
+        {
+            quatf xformOp:orient = (0.70811063, -0.000017208746, 0.000012624003, -0.7061016)
+            float3 xformOp:scale = (1.1903645, 1.0399606, 1.4099234)
+            double3 xformOp:translate = (4.120194435119629, -0.15002931654453278, 0.4042786657810211)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bed/zrumze/usd/zrumze.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_bamfsz_0"
+        {
+            quatf xformOp:orient = (1.9185245e-7, 7.003546e-7, 7.8446465e-7, 1)
+            float3 xformOp:scale = (1.1817381, 0.81527275, 1.2010889)
+            double3 xformOp:translate = (-1.1752872467041016, -1.5989748239517212, 0.3331078290939331)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/bamfsz/usd/bamfsz.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_dajebq_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.1902814, 1.2568642, 1.2964786)
+            double3 xformOp:translate = (-0.34463033080101013, 1.3833967447280884, 0.5804942846298218)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/dajebq/usd/dajebq.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_jhymlr_0"
+        {
+            quatf xformOp:orient = (1.0000001, -7.21775e-9, -3.7466634e-9, -3.1432137e-9)
+            float3 xformOp:scale = (1.6188585, 1.3394469, 1.8424104)
+            double3 xformOp:translate = (0.9149672985076904, 10.0697660446167, 0.34397149085998535)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/jhymlr/usd/jhymlr.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_jrhgeu_0"
+        {
+            quatf xformOp:orient = (0.7071047, -0.0034112642, -0.0034206316, 0.7070925)
+            float3 xformOp:scale = (1.1812304, 1.4365646, 1.4163376)
+            double3 xformOp:translate = (1.484519362449646, 0.5255780816078186, 0.4985949397087097)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/jrhgeu/usd/jrhgeu.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_jrhgeu_1"
+        {
+            quatf xformOp:orient = (0.7071047, -0.0034112474, -0.0034206128, 0.7070926)
+            float3 xformOp:scale = (1.1812304, 1.4365646, 1.4163376)
+            double3 xformOp:translate = (1.484519362449646, -0.3044220209121704, 0.4985949695110321)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/jrhgeu/usd/jrhgeu.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_slgzfc_0"
+        {
+            quatf xformOp:orient = (0.7071068, 3.731111e-8, -1.990702e-8, -0.70710677)
+            float3 xformOp:scale = (0.82265973, 0.9583263, 0.9098032)
+            double3 xformOp:translate = (4.874759674072266, -1.2227351665496826, 0.24946428835391998)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/slgzfc/usd/slgzfc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_slgzfc_1"
+        {
+            quatf xformOp:orient = (0.70710695, -6.519258e-9, -2.9918738e-8, -0.70710665)
+            float3 xformOp:scale = (0.82265973, 0.9583263, 0.9098032)
+            double3 xformOp:translate = (4.904759407043457, 0.9372642636299133, 0.24946404993534088)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/slgzfc/usd/slgzfc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "breakfast_table_skczfi_0"
+        {
+            quatf xformOp:orient = (1.0000001, -7.690214e-7, 0.000001778666, -1.4519901e-7)
+            float3 xformOp:scale = (1.2701491, 1.8441288, 1.6386046)
+            double3 xformOp:translate = (-1.066648244857788, 7.691315174102783, 0.6374815106391907)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/breakfast_table/skczfi/usd/skczfi.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "coffee_table_fqluyq_0"
+        {
+            quatf xformOp:orient = (0.7126521, 2.2118911e-9, 7.858034e-10, -0.7015179)
+            float3 xformOp:scale = (1.1676836, 1.3449461, 1.1178153)
+            double3 xformOp:translate = (3.5979461669921875, 7.816161632537842, 0.2598097026348114)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/coffee_table/fqluyq/usd/fqluyq.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floor_lamp_vdxlda_0"
+        {
+            quatf xformOp:orient = (1.0000001, 0.0001327093, -0.00010823123, 4.905203e-7)
+            float3 xformOp:scale = (1.4778008, 1.4021072, 1.4927384)
+            double3 xformOp:translate = (4.714974403381348, 9.854828834533691, 0.8938339948654175)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floor_lamp/vdxlda/usd/vdxlda.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floor_lamp_vdxlda_1"
+        {
+            quatf xformOp:orient = (1.0000001, 0.0001242765, -0.00012243474, -0.00000901295)
+            float3 xformOp:scale = (1.1369747, 1.1369774, 1.3939416)
+            double3 xformOp:translate = (4.809939384460449, 5.90984582901001, 0.8346719741821289)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floor_lamp/vdxlda/usd/vdxlda.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "pot_plant_udqjui_0"
+        {
+            quatf xformOp:orient = (1.0000001, 0, 0, 0)
+            float3 xformOp:scale = (1.023622, 0.9770913, 0.8994344)
+            double3 xformOp:translate = (1.5168317556381226, -0.5059992074966431, 1.2595951557159424)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/pot_plant/udqjui/usd/udqjui.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "pot_plant_udqjui_1"
+        {
+            quatf xformOp:orient = (0.9999999, -0.0002509593, 0.00033702864, 4.5262823e-7)
+            float3 xformOp:scale = (1.7322834, 1.7914019, 2.0643196)
+            double3 xformOp:translate = (-2.2980477809906006, 8.269325256347656, 0.6375112533569336)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/pot_plant/udqjui/usd/udqjui.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "pot_plant_udqjui_2"
+        {
+            quatf xformOp:orient = (0.99999994, -0.0003839709, 0.00046226964, 0.0000012126093)
+            float3 xformOp:scale = (1.7716535, 1.9541826, 1.7695231)
+            double3 xformOp:translate = (4.7972917556762695, 6.938416957855225, 0.5464264750480652)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/pot_plant/udqjui/usd/udqjui.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "sofa_xhxdqf_0"
+        {
+            quatf xformOp:orient = (1.0000001, 0, 0, 0)
+            float3 xformOp:scale = (1.3570905, 1.1876677, 1.0017673)
+            double3 xformOp:translate = (3.1176581382751465, 9.344093322753906, 0.34633275866508484)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/sofa/xhxdqf/usd/xhxdqf.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "ottoman_xcmniq_0"
+        {
+            quatf xformOp:orient = (-0.19627233, 0.000024515022, -0.00006437421, 0.98054945)
+            float3 xformOp:scale = (1.7108203, 1.7288737, 1.5088061)
+            double3 xformOp:translate = (0.30922770500183105, -0.3062654435634613, 0.20390534400939941)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/ottoman/xcmniq/usd/xcmniq.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "table_lamp_xbfgjc_0"
+        {
+            quatf xformOp:orient = (1, 0.00011281759, 0.00019508698, 0.00002201381)
+            float3 xformOp:scale = (1.426541, 1.5629038, 1.4800594)
+            double3 xformOp:translate = (-1.2446330785751343, -1.5549230575561523, 0.8227310180664062)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/table_lamp/xbfgjc/usd/xbfgjc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "table_lamp_xbfgjc_1"
+        {
+            quatf xformOp:orient = (0.99999994, -0.0001403199, 0.00029710686, 0.0000075375924)
+            float3 xformOp:scale = (1.5629215, 1.7667904, 1.3703121)
+            double3 xformOp:translate = (4.8454084396362305, 0.9401716589927673, 0.6508283615112305)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/table_lamp/xbfgjc/usd/xbfgjc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "table_lamp_xbfgjc_2"
+        {
+            quatf xformOp:orient = (1, -0.0001410842, 0.00031403126, 0.0000064271385)
+            float3 xformOp:scale = (1.5629215, 1.7667904, 1.3703121)
+            double3 xformOp:translate = (4.8154144287109375, -1.2198282480239868, 0.6508291363716125)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/table_lamp/xbfgjc/usd/xbfgjc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "table_lamp_xbfgjc_3"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (2.1739066, 1.834298, 1.5375725)
+            double3 xformOp:translate = (1.5304254293441772, 0.7251328825950623, 1.1529473066329956)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/table_lamp/xbfgjc/usd/xbfgjc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "trash_can_zotrbg_0"
+        {
+            quatf xformOp:orient = (0.9999877, -0.004378894, 0.0021637843, -0.0008941428)
+            float3 xformOp:scale = (0.92690045, 0.8428009, 1.1783174)
+            double3 xformOp:translate = (-0.4043590724468231, 3.3311126232147217, 0.2598988115787506)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/trash_can/zotrbg/usd/zotrbg.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "trash_can_zotrbg_1"
+        {
+            quatf xformOp:orient = (0.9999921, -0.003509951, 0.0017501502, -0.00082136)
+            float3 xformOp:scale = (0.70220584, 0.73031497, 1.1783174)
+            double3 xformOp:translate = (2.5256824493408203, 4.451229095458984, 0.2603476047515869)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/trash_can/zotrbg/usd/zotrbg.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bathtub_fdjykf_0"
+        {
+            quatf xformOp:orient = (-0.70581996, -9.313226e-10, 1.2164492e-9, 0.70839137)
+            float3 xformOp:scale = (1.8160452, 1.2263433, 1.1138313)
+            double3 xformOp:translate = (4.612729549407959, 4.226726055145264, 0.18866196274757385)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bathtub/fdjykf/usd/fdjykf.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_slgzfc_2"
+        {
+            quatf xformOp:orient = (0.7056799, 0, 2.3283064e-10, 0.7085309)
+            float3 xformOp:scale = (1.1506088, 1.3543727, 1.6378301)
+            double3 xformOp:translate = (-2.38492751121521, 5.5549516677856445, 0.44999977946281433)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/slgzfc/usd/slgzfc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_slgzfc_3"
+        {
+            quatf xformOp:orient = (0.7056799, 0, 2.3283064e-10, 0.7085309)
+            float3 xformOp:scale = (1.1506088, 1.3543727, 1.6378301)
+            double3 xformOp:translate = (-2.38492751121521, 6.074952125549316, 0.44999977946281433)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/slgzfc/usd/slgzfc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "bottom_cabinet_slgzfc_4"
+        {
+            quatf xformOp:orient = (0.707107, -3.2014214e-10, -3.938112e-10, 0.7071067)
+            float3 xformOp:scale = (0.6835369, 1.3771111, 1.6378301)
+            double3 xformOp:translate = (-2.379021644592285, 3.642699956893921, 0.44999977946281433)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/bottom_cabinet/slgzfc/usd/slgzfc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "carpet_ctclvd_0"
+        {
+            quatf xformOp:orient = (0.7086693, 0, 0, 0.7055408)
+            float3 xformOp:scale = (1.4800887, 1.5134605, 0.24480331)
+            double3 xformOp:translate = (-0.723709938184135, -0.38627230814685576, 0.002372729955)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/carpet/ctclvd/usd/ctclvd.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "carpet_ctclvd_1"
+        {
+            quatf xformOp:orient = (0.7071069, 0, 0, 0.70710665)
+            float3 xformOp:scale = (0.65951335, 0.6535046, 0.24480331)
+            double3 xformOp:translate = (0.4254139785774999, 9.314999511718668, 0.0023727299549999997)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/carpet/ctclvd/usd/ctclvd.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "carpet_ctclvd_2"
+        {
+            quatf xformOp:orient = (0.709429, 0, 0, -0.7047769)
+            float3 xformOp:scale = (2.0999284, 2.0297174, 0.24480331)
+            double3 xformOp:translate = (3.5853872089774814, 7.805293700379685, 0.002372729955)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/carpet/ctclvd/usd/ctclvd.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "dishwasher_dngvvi_0"
+        {
+            quatf xformOp:orient = (0.70616823, -2.3283064e-10, -8.440111e-10, 0.7080442)
+            float3 xformOp:scale = (1.1236641, 1.0878897, 1.2446791)
+            double3 xformOp:translate = (-2.3353335857391357, 4.092178821563721, 0.4602762758731842)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/dishwasher/dngvvi/usd/dngvvi.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_0"
+        {
+            quatf xformOp:orient = (4.371139e-8, 0, 0, 1)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (-1.7349188750699398, 6.493134798348753, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_1"
+        {
+            quatf xformOp:orient = (4.371139e-8, 0, 0, 1)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (-2.214635305734934, 1.6031354087037535, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_10"
+        {
+            quatf xformOp:orient = (0.70710677, 0, 0, -0.70710677)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (1.1969183022451255, 6.216551705815821, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_11"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (2.38461504222918, 5.516872037595126, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_12"
+        {
+            quatf xformOp:orient = (0.7071066, 0, 0, 0.70710695)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (1.3231842367635083, 5.409880424067259, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_13"
+        {
+            quatf xformOp:orient = (4.371139e-8, 0, 0, 1)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (1.2885349823500605, 2.393133455573753, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_14"
+        {
+            quatf xformOp:orient = (0.70710677, 0, 0, 0.70710677)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (1.3231861899448745, 5.74944829418918, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_15"
+        {
+            quatf xformOp:orient = (0.70710677, 0, 0, 0.70710677)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (0.1131842291898744, 8.81652104808918, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_2"
+        {
+            quatf xformOp:orient = (0.70710677, 0, 0, 0.70710677)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (0.2431861746848744, 2.0943079133291795, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_3"
+        {
+            quatf xformOp:orient = (0.7071066, 0, 0, 0.70710695)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (1.3131861898935082, 2.0955869670372578, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_4"
+        {
+            quatf xformOp:orient = (-3.1391647e-7, 0, 0, 1)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (3.0791286088965886, 2.3931354086311103, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_5"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (2.4930198273891797, 3.106871915525126, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_6"
+        {
+            quatf xformOp:orient = (4.371139e-8, 0, 0, 1)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (2.45368451848506, 3.2131334555737534, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_7"
+        {
+            quatf xformOp:orient = (-1.9470718e-7, 0, 0, 1)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (-0.011512988392254479, 2.3931393149053224, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_8"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (-1.7042071013208206, 6.336873990725126, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "electric_switch_wseglt_9"
+        {
+            quatf xformOp:orient = (0.7071067, 0, 0, 0.7071068)
+            float3 xformOp:scale = (1.0000103, 1.0001118, 0.99999994)
+            double3 xformOp:translate = (0.24318517580865276, 3.717339163655202, 1.200281898479443)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/electric_switch/wseglt/usd/wseglt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "fridge_xyejdx_0"
+        {
+            quatf xformOp:orient = (-0.70540506, 2.6193447e-10, -5.820766e-11, 0.70880455)
+            float3 xformOp:scale = (1.2286649, 1.0649475, 1.0076951)
+            double3 xformOp:translate = (-0.1851631999015808, 3.9132142066955566, 0.827250599861145)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/fridge/xyejdx/usd/xyejdx.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "mirror_pevdqu_0"
+        {
+            quatf xformOp:orient = (1.9470718e-7, 0, 0, 1)
+            float3 xformOp:scale = (1.9715587, 2.2000597, 0.86367506)
+            double3 xformOp:translate = (3.8350537109356515, 5.655453613279763, 1.7499998883490133)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/mirror/pevdqu/usd/pevdqu.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "mirror_pevdqu_1"
+        {
+            quatf xformOp:orient = (1.9470718e-7, 0, 0, 1)
+            float3 xformOp:scale = (2.1984541, 1.7582066, 1.5545101)
+            double3 xformOp:translate = (3.6900535888657267, 3.2305634765600004, 1.6499997746129584)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/mirror/pevdqu/usd/pevdqu.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_cltbty_0"
+        {
+            quatf xformOp:orient = (1.9470718e-7, 0, 0, 1)
+            float3 xformOp:scale = (1.3676062, 1.1028413, 1.4026217)
+            double3 xformOp:translate = (-1.3099466705460354, 2.42671793346327, 1.7752653806623204)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/cltbty/usd/cltbty.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_etixod_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.743223, 1.2281642, 0.8520839)
+            double3 xformOp:translate = (4.54505339405094, 10.176722320072352, 1.6749255398491152)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/etixod/usd/etixod.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_fanvpf_0"
+        {
+            quatf xformOp:orient = (0.7070343, 0, 0, 0.7071793)
+            float3 xformOp:scale = (0.93103373, 1.1028413, 0.86338633)
+            double3 xformOp:translate = (1.3218346600911366, -1.2300404308069282, 1.6001635715016966)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/fanvpf/usd/fanvpf.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_fhkzlm_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.5819508, 1.1028413, 0.38420087)
+            double3 xformOp:translate = (-2.3299468336350873, 8.618242386569612, 1.700163398423771)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/fhkzlm/usd/fhkzlm.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_gwricv_0"
+        {
+            quatf xformOp:orient = (1.9470718e-7, 0, 0, 1)
+            float3 xformOp:scale = (1.1639016, 1.1028413, 1.9423722)
+            double3 xformOp:translate = (-0.24994625072678697, 6.49434026062429, 1.4503674329935936)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/gwricv/usd/gwricv.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_hhxttu_0"
+        {
+            quatf xformOp:orient = (0.7084297, 0, 0, -0.7057814)
+            float3 xformOp:scale = (0.7710738, 1.1028413, 1.4027758)
+            double3 xformOp:translate = (5.068629808911333, -0.20499468199121038, 1.7752652819955825)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/hhxttu/usd/hhxttu.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_jpfyrq_0"
+        {
+            quatf xformOp:orient = (0.7084297, 0, 0, -0.7057814)
+            float3 xformOp:scale = (0.7710738, 1.1028413, 1.2701513)
+            double3 xformOp:translate = (5.066338864778035, 0.5849957498888142, 1.7752656900099437)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/jpfyrq/usd/jpfyrq.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_lucjyq_0"
+        {
+            quatf xformOp:orient = (0.7084297, 0, 0, -0.7057814)
+            float3 xformOp:scale = (0.7710738, 1.1028413, 0.9363253)
+            double3 xformOp:translate = (5.066319948517488, -0.9750041932321211, 1.7752655716646941)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/lucjyq/usd/lucjyq.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_qavxsz_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.7420565, 1.1028413, 1.1518453)
+            double3 xformOp:translate = (-0.3449468429626835, 1.5182916481403335, 1.6502041706177657)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/qavxsz/usd/qavxsz.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_qjkajj_0"
+        {
+            quatf xformOp:orient = (0.7061781, 0, 0, 0.7080342)
+            float3 xformOp:scale = (1.222082, 1.1028413, 0.9711861)
+            double3 xformOp:translate = (1.3203303937730673, 0.10992580603189904, 1.6251836520724243)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/qjkajj/usd/qjkajj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_qtvjzk_0"
+        {
+            quatf xformOp:orient = (1.9470718e-7, 0, 0, 1)
+            float3 xformOp:scale = (1.032959, 1.1028413, 0.9220818)
+            double3 xformOp:translate = (4.285053325688391, -1.8172867489938171, 1.7001633999170787)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/qtvjzk/usd/qtvjzk.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_rciuob_0"
+        {
+            quatf xformOp:orient = (0.7090319, 0, 0, -0.7051764)
+            float3 xformOp:scale = (0.8511267, 1.1028413, 0.76840174)
+            double3 xformOp:translate = (1.1967347367601655, 0.7524930924354442, 1.7001633781806251)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/rciuob/usd/rciuob.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_szpupz_0"
+        {
+            quatf xformOp:orient = (0.7070343, 0, 0, 0.7071793)
+            float3 xformOp:scale = (0.93103373, 1.1028413, 1.0245351)
+            double3 xformOp:translate = (1.3218221652317437, 1.4099594000623852, 1.600163287689289)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/szpupz/usd/szpupz.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_tlwjpv_0"
+        {
+            quatf xformOp:orient = (0.7071069, 0, 0, -0.70710665)
+            float3 xformOp:scale = (0.7420565, 1.1028413, 1.0371208)
+            double3 xformOp:translate = (1.19834222172642, -0.009997493922749633, 1.5751838516833736)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/tlwjpv/usd/tlwjpv.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_weqggl_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.62569547, 1.1028413, 1.1523759)
+            double3 xformOp:translate = (-1.9249468380733468, 6.328299333779766, 1.7251837760686988)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/weqggl/usd/weqggl.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_wfdvzv_0"
+        {
+            quatf xformOp:orient = (1.9470718e-7, 0, 0, 1)
+            float3 xformOp:scale = (0.7274749, 1.1028413, 0.41066393)
+            double3 xformOp:translate = (3.3500532962007243, -1.8172822260591048, 1.695077700980354)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/wfdvzv/usd/wfdvzv.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_yrgaal_0"
+        {
+            quatf xformOp:orient = (0.7071069, 0, 0, -0.70710665)
+            float3 xformOp:scale = (1.222082, 1.1028413, 1.7262754)
+            double3 xformOp:translate = (5.067337612977139, 7.940001829784848, 1.8003268015379905)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/yrgaal/usd/yrgaal.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_ytxhyl_0"
+        {
+            quatf xformOp:orient = (0.7071069, 0, 0, 0.70710665)
+            float3 xformOp:scale = (0.9384703, 1.1028413, 0.43216518)
+            double3 xformOp:translate = (-2.6506866006250194, -0.36249765305431125, 1.5751838461168353)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/ytxhyl/usd/ytxhyl.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "picture_zsirgc_0"
+        {
+            quatf xformOp:orient = (-0.70469755, 0, 0, 0.7095079)
+            float3 xformOp:scale = (0.88028985, 1.1028413, 0.9450338)
+            double3 xformOp:translate = (1.1962845594344502, -0.662485852225034, 1.6551674937338594)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/picture/zsirgc/usd/zsirgc.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "range_hood_iqbpie_0"
+        {
+            quatf xformOp:orient = (0.7071069, 0, -1.375156e-9, -0.7071067)
+            float3 xformOp:scale = (1.1211638, 1.2280515, 1.2774783)
+            double3 xformOp:translate = (-0.15248733758926392, 5.917500019073486, 1.870776891708374)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/range_hood/iqbpie/usd/iqbpie.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "shelf_owvfik_0"
+        {
+            quatf xformOp:orient = (0.7071069, 0, 0, -0.70710665)
+            float3 xformOp:scale = (2.055441, 2.2801316, 2.036815)
+            double3 xformOp:translate = (-0.16995468916905127, 4.89994335437812, 0.43655594484039595)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/shelf/owvfik/usd/owvfik.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "shelf_vgzdul_0"
+        {
+            quatf xformOp:orient = (0.7079835, 0, 0, -0.706229)
+            float3 xformOp:scale = (0.8964305, 1.0666173, 0.8546809)
+            double3 xformOp:translate = (0.08502709891058298, 5.153485150313767, 1.4569883978948837)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/shelf/vgzdul/usd/vgzdul.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "sink_czyfhq_0"
+        {
+            quatf xformOp:orient = (0.7071069, -3.7252903e-9, -6.9849193e-10, 0.7071067)
+            float3 xformOp:scale = (6.159409, 4.4544706, 4.931452)
+            double3 xformOp:translate = (-2.300386905670166, 4.8284077644348145, 0.4877564311027527)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/sink/czyfhq/usd/czyfhq.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "sink_xiybkb_0"
+        {
+            quatf xformOp:orient = (1.9557774e-7, 0, -1.1641532e-10, 1)
+            float3 xformOp:scale = (3.0404038, 3.590459, 4.93191)
+            double3 xformOp:translate = (3.8246729373931885, 3.3938941955566406, 0.48867157101631165)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/sink/xiybkb/usd/xiybkb.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "stove_rgpphy_0"
+        {
+            quatf xformOp:orient = (0.70710695, 0, 2.7939677e-9, -0.7071067)
+            float3 xformOp:scale = (1.0942525, 1.5090151, 1.2700137)
+            double3 xformOp:translate = (-0.23843911290168762, 5.909679889678955, 0.5361154079437256)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/stove/rgpphy/usd/rgpphy.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "toilet_kfmkbm_0"
+        {
+            quatf xformOp:orient = (1.0000001, 0, 0, 0)
+            float3 xformOp:scale = (1.1184611, 1.0295599, 1.2377173)
+            double3 xformOp:translate = (3.685638904571533, 5.098461627960205, 0.330701619386673)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/toilet/kfmkbm/usd/kfmkbm.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "top_cabinet_dmwxyl_0"
+        {
+            quatf xformOp:orient = (0.707107, 0, 2.0172592e-9, 0.7071067)
+            float3 xformOp:scale = (1.8300296, 1.2771028, 1.5512484)
+            double3 xformOp:translate = (-2.512604236602783, 3.938934803009033, 1.8908520936965942)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/top_cabinet/dmwxyl/usd/dmwxyl.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "top_cabinet_dmwxyl_1"
+        {
+            quatf xformOp:orient = (0.7071069, 1.8626451e-9, -4.370122e-10, 0.70710665)
+            float3 xformOp:scale = (2.0793803, 1.3212475, 1.5512484)
+            double3 xformOp:translate = (-2.4792513847351074, 5.838789463043213, 1.8908520936965942)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/top_cabinet/dmwxyl/usd/dmwxyl.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "top_cabinet_fqhdne_0"
+        {
+            quatf xformOp:orient = (1.0000001, 0, 0, 0)
+            float3 xformOp:scale = (1.3439133, 1.2458253, 1.5949601)
+            double3 xformOp:translate = (2.709549903869629, 4.545708656311035, 1.6241765022277832)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/top_cabinet/fqhdne/usd/fqhdne.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "towel_rack_kqrmrh_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (2.0864246, 1.0325865, 1.0902741)
+            double3 xformOp:translate = (0.6850543390021323, 10.157961268187501, 1.8850734172566177)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/towel_rack/kqrmrh/usd/kqrmrh.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ithrgo_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.616929, 1.5526301, 1.3901252)
+            double3 xformOp:translate = (2.7484560012817383, 10.269660949707031, 1.4917824268341064)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ithrgo/usd/ithrgo.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ithrgo_1"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0801837, 1.4324265, 1.3901252)
+            double3 xformOp:translate = (-1.2226735353469849, 8.703526496887207, 1.4917824268341064)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ithrgo/usd/ithrgo.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_0"
+        {
+            quatf xformOp:orient = (0.70494765, 9.313226e-10, -3.303171e-10, 0.70925957)
+            float3 xformOp:scale = (1.028879, 1.4391278, 1.4571121)
+            double3 xformOp:translate = (-2.672874689102173, 0.858439028263092, 1.3946723937988281)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_1"
+        {
+            quatf xformOp:orient = (0.7071068, -1.8626451e-9, -5.5911187e-10, 0.70710665)
+            float3 xformOp:scale = (1.0725762, 1.4391278, 0.80943394)
+            double3 xformOp:translate = (-2.673232316970825, 4.778812885284424, 1.7359281778335571)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_2"
+        {
+            quatf xformOp:orient = (0.7068098, 7.450581e-9, -1.5294063e-8, 0.70740384)
+            float3 xformOp:scale = (1.4092934, 1.4391278, 1.3491658)
+            double3 xformOp:translate = (-2.6731643676757812, 7.464601039886475, 1.4932150840759277)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_3"
+        {
+            quatf xformOp:orient = (1.947119e-7, 0, -5.5933924e-11, 1.0000001)
+            float3 xformOp:scale = (1.958004, 1.9188372, 1.4571121)
+            double3 xformOp:translate = (0.44675517082214355, -1.9143784046173096, 1.3946723937988281)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_4"
+        {
+            quatf xformOp:orient = (1.9470463e-7, 0, 4.5474735e-11, 1)
+            float3 xformOp:scale = (1.6462564, 1.9188372, 1.4571121)
+            double3 xformOp:translate = (2.3539702892303467, -1.9143784046173096, 1.3946725130081177)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_5"
+        {
+            quatf xformOp:orient = (0.7089459, -9.313226e-10, 1.2687451e-10, -0.705263)
+            float3 xformOp:scale = (1.1600952, 1.5590552, 1.4571121)
+            double3 xformOp:translate = (5.148268222808838, 1.7308183908462524, 1.3946725130081177)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_6"
+        {
+            quatf xformOp:orient = (-0.7049544, 0, 7.624976e-10, 0.7092527)
+            float3 xformOp:scale = (0.9103975, 1.5590552, 1.3491658)
+            double3 xformOp:translate = (5.148928642272949, 9.541916847229004, 1.4932150840759277)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "window_ulnafj_7"
+        {
+            quatf xformOp:orient = (0.70710695, 9.313226e-10, 1.7818707e-9, -0.70710677)
+            float3 xformOp:scale = (1.0476063, 1.5590552, 1.3491658)
+            double3 xformOp:translate = (5.1486124992370605, 6.369767189025879, 1.4932150840759277)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/window/ulnafj/usd/ulnafj.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_aafddg_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000001, 1.0000079, 0.99999994)
+            double3 xformOp:translate = (0.7250531616249999, 5.6346962890649985, -0.14999999999999997)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/aafddg/usd/aafddg.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_cborev_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.9999958, 1.0000004, 0.99999994)
+            double3 xformOp:translate = (-1.240252685545, 1.94500231934, -0.14999999999999997)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/cborev/usd/cborev.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_ekqfhr_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.99999547, 0.99999475, 0.99999994)
+            double3 xformOp:translate = (-1.3177527770973594, 7.552196035317368, -0.15000012206999996)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/ekqfhr/usd/ekqfhr.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_gwawvk_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.9999998, 1, 0.99999994)
+            double3 xformOp:translate = (3.825104738715436, 4.278965128365929, -0.14999999999999997)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/gwawvk/usd/gwawvk.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_hcqtge_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.99999577, 1.000003, 0.99999994)
+            double3 xformOp:translate = (-1.2402527465802602, 4.369696197112299, -0.14999999999999997)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/hcqtge/usd/hcqtge.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_mowtdm_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.99999994, 1, 0.99999994)
+            double3 xformOp:translate = (2.7025532226600006, 5.130002441410001, -0.15000000000000002)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/mowtdm/usd/mowtdm.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_nuacoz_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.99999696, 1.0000002, 0.99999994)
+            double3 xformOp:translate = (-0.6172459283452357, -0.03499866556777487, -0.15000000000000002)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/nuacoz/usd/nuacoz.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_rqcmwl_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.99999994, 1.0000002, 0.99999994)
+            double3 xformOp:translate = (3.2025531921424975, 0.2075025751915183, -0.15)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/rqcmwl/usd/rqcmwl.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_suqrjf_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 0.99999994, 0.99999994)
+            double3 xformOp:translate = (1.4646795057095834, 3.6847144432108494, -0.15000000000000002)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/suqrjf/usd/suqrjf.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_tcsswg_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000001, 0.9999999, 0.99999994)
+            double3 xformOp:translate = (0.725053161625, 4.202502319340001, -0.15000000000000002)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/tcsswg/usd/tcsswg.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_xzlkei_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.9999999, 1.0000025, 0.99999994)
+            double3 xformOp:translate = (2.673383762779977, 7.997131010356066, -0.15000012206999996)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/xzlkei/usd/xzlkei.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "floors_znzabl_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 0.99999976, 0.99999994)
+            double3 xformOp:translate = (3.7125532226599995, 2.74250231934, -0.15)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/floors/znzabl/usd/znzabl.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_aigrtq_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000029, 1.0000888, 0.99999994)
+            double3 xformOp:translate = (-1.1117265430658976, 1.5650024412164554, 1.2252368804067373)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/aigrtq/usd/aigrtq.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_ayjzsb_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000026, 1.0000687, 0.99999994)
+            double3 xformOp:translate = (3.740053242482156, 3.1600024426919275, 1.1111996293067932)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/ayjzsb/usd/ayjzsb.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_bvcaju_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000483, 0.99999905, 0.99999994)
+            double3 xformOp:translate = (5.145053254338841, 4.084587363363094, 1.0878583163022995)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/bvcaju/usd/bvcaju.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_enroos_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000075, 1.0000483, 0.99999994)
+            double3 xformOp:translate = (0.7350532193974844, 4.855002443154084, 1.1110381007194519)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/enroos/usd/enroos.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_gfxhgi_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000588, 1.0000007, 0.99999994)
+            double3 xformOp:translate = (-2.6699467069936733, 3.3050539763006603, 1.0945742323994636)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/gfxhgi/usd/gfxhgi.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_hqpeoy_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000019, 1.0000548, 0.99999994)
+            double3 xformOp:translate = (2.5813461551646975, 10.255001953129437, 1.0352894335985183)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/hqpeoy/usd/hqpeoy.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_hyizxy_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000669, 1.0000017, 0.99999994)
+            double3 xformOp:translate = (0.19005322548713968, 4.103861464022497, 1.1313570857048034)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/hyizxy/usd/hyizxy.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_icgqdt_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000095, 1.0000916, 0.99999994)
+            double3 xformOp:translate = (2.731577354131567, 4.685002445482492, 1.1093631505966186)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/icgqdt/usd/icgqdt.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_icgyhn_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000579, 1.0000027, 0.99999994)
+            double3 xformOp:translate = (1.2600532196380383, 4.995002441640306, 1.1118190854787826)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/icgyhn/usd/icgyhn.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_insggh_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000011, 1.0000443, 0.99999994)
+            double3 xformOp:translate = (1.2806195922853965, -1.9099975558122841, 1.072623711824417)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/insggh/usd/insggh.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_ipzkkp_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.000002, 1.0000484, 0.99999994)
+            double3 xformOp:translate = (-0.796054362477122, 6.415002442820357, 1.1986276018898934)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/ipzkkp/usd/ipzkkp.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_iqbzlu_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.000001, 1.0000548, 0.99999994)
+            double3 xformOp:translate = (0.7798660256893895, 2.3246486192987375, 1.2086515843868255)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/iqbzlu/usd/iqbzlu.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_ngfxil_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000665, 1.0000019, 0.99999994)
+            double3 xformOp:translate = (1.2600532231615904, 0.18000244493571582, 1.111388725042343)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/ngfxil/usd/ngfxil.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_pefrto_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.00008, 1.0000025, 0.99999994)
+            double3 xformOp:translate = (2.2805316167311482, 4.069663131831827, 1.2670660063624382)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/pefrto/usd/pefrto.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_pziwqm_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000023, 1.0000595, 0.99999994)
+            double3 xformOp:translate = (3.422718315839924, 5.575002424616649, 1.1384225718677043)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/pziwqm/usd/pziwqm.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_sdxbli_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000916, 1.0000086, 0.99999994)
+            double3 xformOp:translate = (3.1250532217514713, 5.120002444949901, 1.1091404229402542)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/sdxbli/usd/sdxbli.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_snokhn_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000031, 1.0000588, 0.99999994)
+            double3 xformOp:translate = (-1.332908001272435, 8.690001957415925, 1.0136721551418304)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/snokhn/usd/snokhn.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_twxspa_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.000007, 1.0000665, 0.99999994)
+            double3 xformOp:translate = (0.7493902512111774, 3.550002445766732, 1.2992361083626747)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/twxspa/usd/twxspa.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "walls_xrmvpg_0"
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.0000472, 1.000005, 0.99999994)
+            double3 xformOp:translate = (0.035053248429869066, 9.587790405631065, 1.2416600666940212)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "Asset" (
+                prepend references = @baked_scene_assets/walls/xrmvpg/usd/xrmvpg.usd@
+            )
+            {
+            }
+        }
+    }
+}
+

@@ -100,9 +100,48 @@ class BaseTask(ABC):
                     except Exception as e:
                         log.error(f'Fail to create IRigidBody at {prim.GetPath()}: {e}')
 
+            # 在生成 articulation 之前补全静态 Mesh 碰撞；reset 之后再改 USD 会破坏 PhysX / 机器人仍悬空
+            if getattr(self.config, "enable_static_scene_mesh_collision_patch", False):
+                self._patch_static_scene_mesh_collisions_for_physx()
+
         self.robots = init_robots(self.config, self._scene)
         self.objects = init_objects(self.config, self._scene)
         self.loaded = True
+
+    def _patch_static_scene_mesh_collisions_for_physx(self) -> None:
+        """为场景根下 Mesh 添加碰撞与 convexHull 近似，供 Merom 等烘焙地台与 PhysX 建立接触。"""
+        try:
+            from pxr import PhysxSchema, Usd, UsdPhysics
+        except ImportError:
+            log.warning("_patch_static_scene_mesh_collisions_for_physx: pxr not available, skip")
+            return
+        scene_prim = getattr(self._scene, "scene_prim", None)
+        if scene_prim is None or not scene_prim.IsValid():
+            log.warning("collision patch: invalid scene_prim, skip")
+            return
+        inst_count = 0
+        mesh_count = 0
+        for prim in Usd.PrimRange.AllPrims(scene_prim):
+            if prim.IsInstance():
+                prim.SetInstanceable(False)
+                inst_count += 1
+        for prim in Usd.PrimRange.AllPrims(scene_prim):
+            if prim.GetTypeName() != "Mesh":
+                continue
+            try:
+                UsdPhysics.CollisionAPI.Apply(prim)
+                physx = PhysxSchema.PhysxCollisionAPI.Apply(prim)
+                if hasattr(physx, "CreateApproximationAttr"):
+                    physx.CreateApproximationAttr().Set("convexHull")
+                mesh_count += 1
+            except Exception:
+                continue
+        log.info(
+            "scene mesh collision patch (pre-robot): meshes=%s, instances_uninstanced=%s env_id=%s",
+            mesh_count,
+            inst_count,
+            self.env_id,
+        )
 
     def clear_rigid_bodies(self):
         for rigid_body_name in self.scene_rigid_bodies.keys():

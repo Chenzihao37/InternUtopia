@@ -427,6 +427,10 @@ class SimulatorRunner:
 
         self._scene.unwrap()._finalize(self._world.physics_sim_view)  # noqa
 
+        # 烘焙场景可能带重力为 0 / 缺失 PhysicsScene；机器人 USD 也可能对个别刚体写了 disableGravity
+        self._ensure_stage_physics_gravity()
+        self._ensure_env_robots_not_disable_gravity()
+
         # post_reset for new tasks
         for task in _new_tasks:
             task.post_reset()
@@ -473,6 +477,99 @@ class SimulatorRunner:
             stage_units_in_meters=1.0,
             sim_params={'use_fabric': use_fabric},
         )
+
+    def _ensure_stage_physics_gravity(self) -> None:
+        """保证舞台上至少有一个可用的 PhysX 重力场（烘焙场景常漏设或为 0）。"""
+        try:
+            from pxr import Gf, Sdf, Usd, UsdPhysics
+        except ImportError:
+            return
+        stage = getattr(self._world, "stage", None)
+        if stage is None:
+            return
+
+        gravity_dir = Gf.Vec3f(0.0, 0.0, -1.0)
+        gravity_mag = 9.81
+        configured = []
+
+        scene_cls = getattr(UsdPhysics, "Scene", None)
+        if scene_cls is None:
+            log.warning("_ensure_stage_physics_gravity: pxr.UsdPhysics.Scene missing, skip gravity patch")
+            return
+
+        def _write_gravity_on_scene_schema(sch) -> None:
+            d_attr = sch.GetGravityDirectionAttr()
+            if d_attr:
+                d_attr.Set(gravity_dir)
+            else:
+                sch.CreateGravityDirectionAttr().Set(gravity_dir)
+            m_attr = sch.GetGravityMagnitudeAttr()
+            if m_attr:
+                m_attr.Set(gravity_mag)
+            else:
+                sch.CreateGravityMagnitudeAttr().Set(gravity_mag)
+
+        for prim in Usd.PrimRange(stage.GetPseudoRoot()):
+            if not prim.IsValid():
+                continue
+            try:
+                is_ps = prim.IsA(scene_cls)
+            except Exception:
+                is_ps = False
+            if not is_ps and prim.GetTypeName() != "PhysicsScene":
+                continue
+            try:
+                sch = scene_cls(prim)
+            except Exception:
+                continue
+            if not sch:
+                continue
+            _write_gravity_on_scene_schema(sch)
+            configured.append(str(prim.GetPath()))
+
+        if not configured:
+            path = Sdf.Path("/World/physicsScene")
+            prim = stage.GetPrimAtPath(path)
+            if not prim.IsValid():
+                sch = scene_cls.Define(stage, path)
+            else:
+                sch = scene_cls(prim)
+            _write_gravity_on_scene_schema(sch)
+            configured.append(str(path))
+
+        if configured:
+            log.info(
+                "physics gravity ensured: magnitude=%s m/s^2, direction=(0,0,-1), scene_prims=%s",
+                gravity_mag,
+                configured,
+            )
+
+    def _ensure_env_robots_not_disable_gravity(self) -> None:
+        """清除 /World/env_*/robots 下 PhysX 刚体的 disableGravity，避免整机「悬停」。"""
+        try:
+            from pxr import PhysxSchema, Usd
+        except ImportError:
+            return
+        stage = getattr(self._world, "stage", None)
+        if stage is None:
+            return
+        roots = []
+        for i in range(max(1, int(self.env_num))):
+            p = stage.GetPrimAtPath(f"/World/env_{i}/robots")
+            if p.IsValid():
+                roots.append(p)
+        cleared = []
+        for root in roots:
+            for prim in Usd.PrimRange(root):
+                if not prim.IsValid() or not prim.HasAPI(PhysxSchema.PhysxRigidBodyAPI):
+                    continue
+                api = PhysxSchema.PhysxRigidBodyAPI(prim)
+                attr = api.GetDisableGravityAttr()
+                if attr and attr.HasAuthoredValue() and attr.Get():
+                    attr.Set(False)
+                    cleared.append(str(prim.GetPath()))
+        if cleared:
+            log.info("cleared PhysxRigidBodyAPI.disableGravity on: %s", cleared)
 
     def setup_isaacsim(self):
         # Init Isaac Sim

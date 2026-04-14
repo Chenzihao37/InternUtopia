@@ -32,7 +32,10 @@ class MoveToPointBySpeedController(BaseController):
         start_orientation,
         goal_position,
     ):
-        from omni.isaac.core.utils.rotations import quat_to_euler_angles
+        try:
+            from isaacsim.core.utils.rotations import quat_to_euler_angles
+        except ImportError:
+            from omni.isaac.core.utils.rotations import quat_to_euler_angles
 
         normal_vec = np.array([0, 0, 1])
         robot_z_rot = quat_to_euler_angles(start_orientation)[-1]

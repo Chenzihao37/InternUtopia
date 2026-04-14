@@ -19,6 +19,9 @@ from internutopia_extension.configs.controllers.gr1_teleop_controller import (
 from internutopia_extension.configs.controllers.gripper_controller import (
     GripperControllerCfg,
 )
+from internutopia_extension.configs.controllers.holonomic_planar_move_to_point_controller import (
+    HolonomicPlanarMoveToPointControllerCfg,
+)
 from internutopia_extension.configs.controllers.h1_move_by_speed_controller import (
     H1MoveBySpeedControllerCfg,
 )

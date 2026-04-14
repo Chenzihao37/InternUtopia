@@ -1,6 +1,7 @@
 from internutopia_extension.controllers import (
     aliengo_move_by_speed_controller,
     dd_controller,
+    holonomic_planar_move_to_point_controller,
     franka_mocap_teleop_controller,
     g1_move_by_speed_controller,
     gr1_move_by_speed_controller,
